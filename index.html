@@ -96,18 +96,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 <p>Fovis was developed on Ubuntu, but may work with other platforms.</p>
 <h1>Build instructions</h1>
-<p>For system-wide installation:</p>
-<p>$ mkdir build $ cd build $ cmake .. $ make $ sudo make install $ sudo ldconfig</p>
-<p>This usually installs Fovis to /usr/local or something like that.</p>
-<p>For use in the source directory:</p>
-<p>$ mkdir build $ make</p>
-<h2>Intel SSE</h2>
-<p>By default, Fovis is configured to use Intel SSE2 and SSE3 instructions. You can disable this option (e.g., if you're targeting a platform without those instructions) by using the CMake option USE_SSE:</p>
-<p>$ cd build $ cmake .. -DUSE_SSE=OFF $ make</p>
-<h2>Building documentation</h2>
-<p>Fovis is documented using Doxygen (<a href="http://www.doxygen.org">http://www.doxygen.org</a>). To build the documentation:</p>
-<p>$ cd doc $ doxygen</p>
-<p>Following that, open up doc/html/index.html in your web browser.</p>
+<p>For system-wide installation: </p><pre class="fragment">$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ sudo make install
+$ sudo ldconfig
+</pre><p>This usually installs Fovis to /usr/local or something like that.</p>
+<p>For use in the source directory: </p><pre class="fragment">$ mkdir build
+$ make
+</pre><h2>Intel SSE</h2>
+<p>By default, Fovis is configured to use Intel SSE2 and SSE3 instructions. You can disable this option (e.g., if you're targeting a platform without those instructions) by using the CMake option USE_SSE: </p><pre class="fragment">$ cd build
+$ cmake .. -DUSE_SSE=OFF
+$ make
+</pre><h2>Building documentation</h2>
+<p>Fovis is documented using <a href="http://www.doxygen.org">Doxygen</a>. To build the documentation: </p><pre class="fragment">$ cd doc
+$ doxygen
+</pre><p>Following that, open up doc/html/index.html in your web browser.</p>
 <h1>Usage requirements</h1>
 <p>For portability reasons, the actual library itself is sensor agnostic and provides no data acquisition capabilities. To use fovis, your program must acquire data on its own and pass it through to the fovis API. Some examples are provided with the source code.</p>
 <p>Effective use of fovis for visual odometry requires the following:</p><ul>
@@ -130,7 +135,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 6 2015 22:20:08 for libfovis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 6 2015 22:22:06 for libfovis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
